@@ -4,111 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Darks VIP</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #0f0f0f;
-            color: #fff;
+            color: #ffffff;
             text-align: center;
             padding: 50px;
         }
 
         h1 {
             color: #ff0055;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 2.6em;
+            margin-bottom: 15px;
         }
 
         p {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .btn {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 15px 35px;
             font-size: 1.2em;
             margin: 10px;
-            border-radius: 8px;
+            border-radius: 10px;
             text-decoration: none;
-            color: #fff;
+            color: #ffffff;
             transition: 0.3s;
         }
 
-        .btn-picpay {
-            background: #00cb7e;
+        .btn-pix {
+            background-color: #00cb7e;
         }
 
-        .btn-picpay:hover {
-            background: #00a85c;
+        .btn-pix:hover {
+            background-color: #00a85c;
         }
 
         .btn-acesso {
-            background: #ff0055;
+            background-color: #ff0055;
         }
 
         .btn-acesso:hover {
-            background: #cc0044;
+            background-color: #cc0044;
+        }
+
+        .box {
+            max-width: 500px;
+            margin: auto;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 0.9em;
             color: #888;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Los Darks VIP</h1>
-    <p>Adquira seu acesso VIP por apenas R$7,50 via PicPay!</p>
+    <div class="box">
+        <h1>Los Darks VIP</h1>
 
-    <p><strong>Pix (copia e cola):</strong></p>
+        <p>
+            Acesso VIP ao script <strong>Los Darks</strong><br>
+            Valor único: <strong>R$ 7,50</strong>
+        </p>
 
-<textarea id="pix" readonly style="width:100%; height:120px;">
-00020126360014br.gov.bcb.pix0114+554599809498052040000530398654047.505802BR5925EDUARDO MATEUS DA SILVA D6009Sao Paulo62290525REC6989A4301518B37702834563047893
-</textarea>
+        <!-- BOTÃO PIX (REDIRECIONA PARA O PICPAY) -->
+        <a href="https://picpay.me/eduardo.mateus.silva29" target="_blank" class="btn btn-pix">
+            Pagar com Pix
+        </a>
 
-<!-- Botão para copiar Pix -->
-<button onclick="copiarPix()">Copiar Pix</button>
+        <br>
 
-<!-- Botão pra ir para acesso após pagamento -->
-<a href="acesso.html" class="btn-acesso">
-    Já paguei / Acessar
-</a>
+        <!-- BOTÃO DE ACESSO -->
+        <a href="acesso.html" class="btn btn-acesso">
+            Já paguei / Acessar
+        </a>
 
-<script>
-function copiarPix() {
-  const pix = document.getElementById("pix");
-  pix.select();
-  document.execCommand("copy");
-  alert("Pix copiado! Agora finalize o pagamento e clique em 'Já paguei / Acessar'.");
-}
-</script>
-
-<style>
-.btn-acesso {
-    display: inline-block;
-    padding: 12px 25px;
-    margin-top: 15px;
-    background-color: #ff0055;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-.btn-acesso:hover {
-    background-color: #cc0044;
-}
-</style>
-
-    <!-- Botão Acesso -->
-    <a href="acesso.html" class="btn btn-acesso">
-        Já paguei / Acessar
-    </a>
+        <p style="font-size: 0.95em; margin-top: 20px;">
+            Após o pagamento, você receberá uma <strong>KEY</strong> para ativar o script.
+        </p>
+    </div>
 
     <footer>
-        ⚠️ Acesso permitido somente após pagamento. Use com responsabilidade.
+        ⚠️ O acesso ao script só funciona com KEY válida.<br>
+        Tentativas sem pagamento não funcionam.
     </footer>
 
 </body>
