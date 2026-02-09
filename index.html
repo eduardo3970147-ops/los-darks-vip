@@ -63,10 +63,22 @@
     <h1>Los Darks VIP</h1>
     <p>Adquira seu acesso VIP por apenas R$7,50 via PicPay!</p>
 
-    <!-- Botão PicPay -->
-    <a href="https://picpay.me/SeuUsuario/7.50" class="btn btn-picpay" target="_blank">
-        Pagar com PicPay
-    </a>
+    <p><strong>Pix (copia e cola):</strong></p>
+
+<textarea id="pix" readonly style="width:100%; height:120px;">
+00020126360014br.gov.bcb.pix0114+554599809498052040000530398654047.505802BR5925EDUARDO MATEUS DA SILVA D6009Sao Paulo62290525REC6989A4301518B37702834563047893
+</textarea>
+
+<button onclick="copiarPix()">Copiar Pix</button>
+
+<script>
+function copiarPix() {
+  const pix = document.getElementById("pix");
+  pix.select();
+  document.execCommand("copy");
+  alert("Pix copiado! Agora é só pagar no app.");
+}
+</script>
 
     <!-- Botão Acesso -->
     <a href="acesso.html" class="btn btn-acesso">
