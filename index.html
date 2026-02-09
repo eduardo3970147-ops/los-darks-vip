@@ -1,108 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Los Darks VIP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Darks VIP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
 
-    .card {
-      background: #111;
-      border-radius: 16px;
-      padding: 24px;
-      max-width: 420px;
-      width: 100%;
-      box-shadow: 0 0 30px rgba(0,0,0,0.6);
-      text-align: center;
-    }
+        h1 {
+            color: #ff0055;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
 
-    h1 {
-      color: #00ffcc;
-      margin-bottom: 10px;
-    }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
 
-    .price {
-      font-size: 28px;
-      font-weight: bold;
-      color: #00ff88;
-      margin: 15px 0;
-    }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
 
-    p {
-      color: #ccc;
-      font-size: 15px;
-    }
+        .btn-picpay {
+            background: #00cb7e;
+        }
 
-    .btn {
-      display: block;
-      margin-top: 20px;
-      padding: 15px;
-      background: linear-gradient(90deg, #00ffcc, #00ff88);
-      color: #000;
-      font-weight: bold;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: transform 0.2s;
-    }
+        .btn-picpay:hover {
+            background: #00a85c;
+        }
 
-    .btn:hover {
-      transform: scale(1.05);
-    }
+        .btn-acesso {
+            background: #ff0055;
+        }
 
-    .pix {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #aaa;
-    }
+        .btn-acesso:hover {
+            background: #cc0044;
+        }
 
-    .copy {
-      margin-top: 10px;
-      padding: 10px;
-      background: #222;
-      border-radius: 8px;
-      font-size: 13px;
-      word-break: break-all;
-    }
-
-    footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #555;
-    }
-  </style>
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="card">
     <h1>Los Darks VIP</h1>
-    <p>Script exclusivo para jogo<br>Rápido, seguro e atualizado</p>
+    <p>Adquira seu acesso VIP por apenas R$7,50 via PicPay!</p>
 
-    <div class="price">R$ 7,50</div>
+    <!-- Botão PicPay -->
+    <a href="https://picpay.me/SeuUsuario/7.50" class="btn btn-picpay" target="_blank">
+        Pagar com PicPay
+    </a>
 
-    <a href="acesso.html" class="btn">JÁ PAGUEI / ACESSAR</a>
-
-    <div class="pix">
-      Pagamento via PIX (copiar e colar):
-    </div>
-
-    <div class="copy">
-      CHAVE-PIX-AQUI
-    </div>
+    <!-- Botão Acesso -->
+    <a href="acesso.html" class="btn btn-acesso">
+        Já paguei / Acessar
+    </a>
 
     <footer>
-      © 2026 Los Darks — VIP
+        ⚠️ Acesso permitido somente após pagamento. Use com responsabilidade.
     </footer>
-  </div>
 
 </body>
 </html>
