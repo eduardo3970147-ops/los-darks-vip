@@ -69,16 +69,38 @@
 00020126360014br.gov.bcb.pix0114+554599809498052040000530398654047.505802BR5925EDUARDO MATEUS DA SILVA D6009Sao Paulo62290525REC6989A4301518B37702834563047893
 </textarea>
 
+<!-- Botão para copiar Pix -->
 <button onclick="copiarPix()">Copiar Pix</button>
+
+<!-- Botão pra ir para acesso após pagamento -->
+<a href="acesso.html" class="btn-acesso">
+    Já paguei / Acessar
+</a>
 
 <script>
 function copiarPix() {
   const pix = document.getElementById("pix");
   pix.select();
   document.execCommand("copy");
-  alert("Pix copiado! Agora é só pagar no app.");
+  alert("Pix copiado! Agora finalize o pagamento e clique em 'Já paguei / Acessar'.");
 }
 </script>
+
+<style>
+.btn-acesso {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #ff0055;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.btn-acesso:hover {
+    background-color: #cc0044;
+}
+</style>
 
     <!-- Botão Acesso -->
     <a href="acesso.html" class="btn btn-acesso">
